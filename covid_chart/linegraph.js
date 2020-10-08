@@ -140,7 +140,7 @@ function processAjaxData(data){
 
 function ajaxHistoricData(callback){
     $.ajax({
-        url: 'https://covidtracking.com/api/v1/states/daily.json',
+        url: 'https://cors-anywhere.herokuapp.com/https://covidtracking.com/api/v1/states/daily.json',
         dataType: 'json',
         success: function(data) {
             callback(data);
